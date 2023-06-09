@@ -4,10 +4,12 @@
   "description": "",
   "main": "./app/index.js",
   "scripts": {
+    "start": "node build/index.js",
     "lint": "eslint . --ext .ts",
     "build": "rm -rf ./build && tsc",
     "test": "jest --watchAll --no-cache --coverage",
-    "prettier": "prettier --config .prettierrc 'app/**/*.ts' --write"
+    "prettier": "prettier --config .prettierrc 'app/**/*.ts' --write",
+    "dev": "ts-node-dev --respawn --transpile-only 'app/index.ts'"
   },
   "jest": {
     "preset": "ts-jest",
