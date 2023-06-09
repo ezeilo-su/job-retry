@@ -1,3 +1,5 @@
 node_modules
 build
 dist
+app/src/components/back-off.ts
+.DS_Store
